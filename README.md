@@ -1,8 +1,8 @@
 # Hello Agent
 
-A conversational AI agent built in n8n, powered by Google Gemini 2.0 Flash. This is the foundational project in my agentic AI portfolio — a minimal but complete pattern that demonstrates how triggers, agents, and language models connect to form a working autonomous workflow.
+A conversational AI agent built in n8n, powered by Google Gemini 2.0 Flash. This is the foundational project in my agentic AI portfolio - a minimal but complete pattern that demonstrates how triggers, agents, and language models connect to form a working autonomous workflow.
 
-**Built by Trevor K** · [LinkedIn](#) · [Portfolio](#)
+**Built by Trevor Kauyu** · [LinkedIn](https://www.linkedin.com/in/trevor-kauyu/) · [Portfolio](#)
 
 ---
 
@@ -10,7 +10,7 @@ A conversational AI agent built in n8n, powered by Google Gemini 2.0 Flash. This
 
 Hello Agent is a chatbot that accepts a user message, routes it to Google Gemini through n8n's AI Agent node, and returns a response. A system message defines the agent's personality and behavior, so responses stay consistent in tone and length across conversations.
 
-It is intentionally simple. The point is not to impress — it is to demonstrate fluency with the building blocks every more complex agent shares.
+It is intentionally simple. The point is not to impress - it is to demonstrate fluency with the building blocks every more complex agent shares.
 
 ## Architecture
 
@@ -29,15 +29,15 @@ Three nodes. Two connections. One working agent.
 
 | Component | Role |
 |---|---|
-| Chat Trigger | Entry point — fires when a user sends a message via n8n's built-in chat UI |
+| Chat Trigger | Entry point - fires when a user sends a message via n8n's built-in chat UI |
 | AI Agent | Orchestrates the call to the language model, applies the system message, returns the structured response |
-| Google Gemini 2.0 Flash | The reasoning model — handles the actual language understanding and generation |
+| Google Gemini 2.0 Flash | The reasoning model - handles the actual language understanding and generation |
 
 ## Stack
 
-- **n8n** (self-hosted via Docker on Windows 11) — workflow orchestration
-- **Google Gemini 2.0 Flash** — language model (free tier)
-- **Docker Desktop** — local container runtime
+- **n8n** (self-hosted via Docker on Windows 11) - workflow orchestration
+- **Google Gemini 2.0 Flash** - language model (free tier)
+- **Docker Desktop** - local container runtime
 
 ## What this project demonstrates
 
@@ -78,25 +78,23 @@ Three nodes. Two connections. One working agent.
 
 ## Files
 
-- `workflow.json` — the exported n8n workflow (drop it into n8n via Import)
-- `screenshots/` — screenshots of the canvas and a sample conversation
-- `README.md` — this file
+- `workflow.json` - the exported n8n workflow (drop it into n8n via Import)
+- `screenshots/` - screenshots of the canvas and a sample conversation
+- `README.md` - this file
 
 ## What I learned
 
-*[Replace this section with your own honest reflection — 2 to 4 short bullets. Examples:]*
-
 - The AI Agent's "Chat Model" connects underneath the agent node, not in the main left-to-right flow. Once I understood this as "the brain attached to the agent," the visual model clicked.
 - The system message has more impact on output quality than I expected. Without it, responses felt generic. With one clear sentence of instruction, the agent felt purposeful.
-- Self-hosting n8n via Docker was less intimidating than I expected — one command, one folder, done. The reverse (paying monthly for a SaaS) would have been easier on day one but locks me out of running unlimited experiments.
+- Self-hosting n8n via Docker was less intimidating than I expected - one command, one folder, done. The reverse (paying monthly for a SaaS) would have been easier on day one but locks me out of running unlimited experiments.
 
 ## What's next
 
 This is the foundation. From here, the portfolio adds:
 
-- **Email triage and routing** — classifying inbound messages and routing them to the right destination
-- **Structured output extraction** — turning free-form text into clean, validated data
-- **Multi-step agents with tool use** — agents that call external systems and act on the results
+- **Email triage and routing** - classifying inbound messages and routing them to the right destination
+- **Structured output extraction** - turning free-form text into clean, validated data
+- **Multi-step agents with tool use** - agents that call external systems and act on the results
 
 Each project builds on the trigger → agent → model pattern shown here.
 
@@ -104,6 +102,6 @@ Each project builds on the trigger → agent → model pattern shown here.
 
 ## Contact
 
-Trevor K · [trevor@email.com](#) · [LinkedIn](#) · [GitHub](#)
+Trevor K · [trevor@email.com](#) · [LinkedIn](https://www.linkedin.com/in/trevor-kauyu/) · [GitHub](https://github.com/Travoltah)
 
 Open to conversations about agentic AI workflow automation, no-code AI tooling, and operational automation projects.
